@@ -1,0 +1,30 @@
+cbmcArguments:
+ classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
+ depth: false
+phases:
+-
+ timeout: 300
+ cbmcArguments:
+   java-assume-inputs-non-null: true
+   max-nondet-array-length: 10
+   do-not-test-methods-with-access: [ private ]
+   cover-function-only: false
+   java-version: 6
+   unwind: 1
+-
+ timeout: 500
+ cbmcArguments:
+   java-assume-inputs-non-null: true
+   max-nondet-array-length: 20
+   do-not-test-methods-with-access: [ private ]
+   cover-function-only: false
+   java-version: 6
+   unwind: 3
+-
+ timeout: 800
+ cbmcArguments:
+   java-assume-inputs-non-null: true
+   max-nondet-array-length: 30
+   max-nondet-string-length: 10
+   java-version: 6
+   unwind: 5
