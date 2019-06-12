@@ -244,6 +244,7 @@
             <jacoco-agent.destfile>${project.build.directory}/jacoco.exec</jacoco-agent.destfile>
           </systemPropertyVariables>
           <testFailureIgnore>true</testFailureIgnore>
+          <reuseForks>false</reuseForks>
         </configuration>
       </plugin>
       <plugin>
