@@ -1,5 +1,7 @@
 {
   "phaseBase": {
-    "javaVersion": 6
+    "javaVersion": 6,
+    "preferDepsJar": true,
+    "context-include": [ "com.jsoniter.", "java.", "org.cprover." ]
   }
 }
