@@ -2,6 +2,15 @@
   "phaseBase": {
     "javaVersion": 6,
     "preferDepsJar": true,
-    "context-include": [ "com.jsoniter.", "java.", "org.cprover." ]
+    "context-include": [
+      "com.jsoniter.",
+      "com.diffblue.annotation.",
+      "java.",
+      "org.cprover.",
+      "org.slf4j.",
+      "sun.misc.",
+      "sun.nio.cs.",
+      "sun.util."
+    ]
   }
 }
